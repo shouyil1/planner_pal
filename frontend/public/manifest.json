@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Planner Pal",
+  "description": "This sample shows how to authorize Firebase in a Chrome extension using a Google account.",
+  "version": "0.1",
+  "icons": {
+    "128": "firebase.png"
+  },
+  "browser_action": {
+    "default_icon": "firebase.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "identity",
+    "https://www.boredapi.com/*",
+    "http://localhost:9090/*",
+    "http://35.184.237.74:8080/*",
+    "*35.184.237.74:8080/*",
+    "https://*/",
+    "http://*/"
+  ],
+  "content_security_policy":"script-src 'self' *35.184.237.74:8080/* https://*/ http://*/ https://www.gstatic.com/ https://*.firebaseio.com http://www.googleapis.com https://apis.google.com https://34.67.108.50:8080/; object-src 'self'",
+  "oauth2": {
+    "client_id": "125203601927-jte40p433qdudka1iftlgk105aqosni2.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj5qBkgs8iI9jldMhoauWR0C0FlP5Br4dYGiXe8y7X+LJP3kQd6ii55e8XKLDpRmk+aHOYwBNMjb2EwQDuLkOkdG2EDbZDRrPVhR0dQCV1rxOoEUF/T6wXXI9Joib7TH0y78/5u/biOSUU5jckSGcV+tbXZSpjJ05TNSoZLTwHeg8KYpF7EPYYXV/hQYLNE/29BwFa1ozgFtV2cTj5XUJb2B/D8RU4tjdVLFTw9PuPDEObCb5OarkAAkrUmzoyKe3QiDRtLBUghWJIDCCm0Vo8rKeemlAVe1POOh5MyGChFI5WwBmiVlGKaukWtvsQJO4ZU061u9WTxBkLC9MveoyjQIDAQAB"
+}

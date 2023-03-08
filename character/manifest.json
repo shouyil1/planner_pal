@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Planner Pal Character",
+  "description": "currently testing",
+  "version": "1.0.3",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content-ext.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    "images/*"
+  ],
+  "permissions": [
+    "*://*/*",
+    "<all_urls>"
+  ]
+}
