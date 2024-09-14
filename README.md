@@ -1,4 +1,5 @@
 # Plannner Pal
+Planner Pal is a multifunctional web app extension where users can think, plan, and remember their day to day tasks and goals.
 
 ## 'frontend' folder: 
 Contains all the frontend stuff, along with firebase. 
